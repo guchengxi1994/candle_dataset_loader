@@ -10,6 +10,7 @@ fn test_iter_simple_dataset() {
         train_labels: candle_core::Tensor::ones(&[10], candle_core::DType::F32, &d).unwrap(),
         test_data: None,
         test_labels: None,
+        batch_size: 5,
     };
     println!("{:?}", dataset.train_data.shape());
     let _ = std::io::stdout().flush();
@@ -28,6 +29,7 @@ fn test_iter_complex_dataset() {
         train_labels: candle_core::Tensor::ones(&[10], candle_core::DType::F32, &d).unwrap(),
         test_data: None,
         test_labels: None,
+        batch_size: 5,
     };
     println!("{:?}", dataset.train_data.shape());
     let _ = std::io::stdout().flush();
