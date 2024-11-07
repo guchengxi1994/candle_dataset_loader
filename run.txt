@@ -1,1 +1,3 @@
 cargo test -- --nocapture
+
+cargo test --release --package candle_dataset_loader --lib -- test_magika::magika_tests::train_simple_model -- --nocapture
