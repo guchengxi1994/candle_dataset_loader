@@ -6,10 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-candle-core = {version = "0.7.2"}
+candle-core = {version = "0.8.0"}
 rand = "0.8.5"
 
 [dev-dependencies]
 anyhow = "1"
-candle-nn = { version = "0.7.2" }
+candle-nn = { version = "0.8.0" }
 once_cell = "1.20.2"
